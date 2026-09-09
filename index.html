@@ -3,308 +3,422 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Professional portfolio of Md. Shaharier Hossain Jibon — E-commerce and Retail Operations Specialist.">
+<title>Md. Shaharier Hossain Jibon — E-Commerce &amp; Retail Operations Professional</title>
+<meta name="description" content="Portfolio of Md. Shaharier Hossain Jibon, an e-commerce and retail operations professional specializing in returns management, inventory control, logistics and customer satisfaction in Dhaka, Bangladesh.">
 <meta name="author" content="Md. Shaharier Hossain Jibon">
-<meta name="theme-color" content="#0b1f3a">
-<title>Md. Shaharier Hossain Jibon | E-commerce & Retail Operations</title>
+<meta property="og:title" content="Md. Shaharier Hossain Jibon — E-Commerce & Retail Operations Professional">
+<meta property="og:description" content="E-commerce operations professional with experience across returns management, inventory, logistics and customer satisfaction at BRAC-Aarong, Shwapno and Khaas Food Ltd.">
+<meta property="og:type" content="website">
 
-<!-- External font/icon libraries are used only for typography and icons. -->
+<!-- Fonts: Fraunces (display serif), Inter (body sans), JetBrains Mono (data/meta) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-<div class="progress" id="progress"></div>
 
-<!-- =========================================================
-     HEADER — upgraded with active navigation, theme toggle,
-     mobile menu and a print-friendly CV action.
-     ========================================================= -->
-<header class="nav" id="nav">
-  <div class="container nav-inner">
-    <a class="brand" href="#home" aria-label="Shaharier Hossain home">
-      <span class="brand-mark"><i class="bi bi-person-badge"></i></span>
-      <span>SHAHARIER<span style="color:var(--blue)">HOSSAIN</span></span>
-    </a>
-    <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Contributions</a>
-      <a href="#contact">Contact</a>
+<!-- ================= NAVIGATION ================= -->
+<header class="site-nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-brand"><span class="brand-mark" aria-hidden="true"></span>Shaharier Hossain</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#home" data-nav>Home</a>
+      <a href="#about" data-nav>About</a>
+      <a href="#skills" data-nav>Skills</a>
+      <a href="#experience" data-nav>Experience</a>
+      <a href="#education" data-nav>Education</a>
+      <a href="#training" data-nav>Training</a>
+      <a href="#engagement" data-nav>Engagement</a>
+      <a href="#contact" data-nav>Contact</a>
     </nav>
-    <div class="nav-actions">
-      <button class="icon-btn" id="themeBtn" title="Toggle theme" aria-label="Toggle dark mode"><i class="bi bi-moon-stars"></i></button>
-      <button class="icon-btn" id="printBtn" title="Print / save as PDF" aria-label="Print CV"><i class="bi bi-printer"></i></button>
-      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open navigation"><i class="bi bi-list"></i></button>
-    </div>
+    <a href="#contact" class="nav-cta">Get in touch</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
-<main>
-<!-- =========================================================
-     HERO — original identity/data retained; added dynamic
-     visual hierarchy, animated stats and quick expertise.
-     ========================================================= -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#education">Education</a>
+  <a href="#training">Training</a>
+  <a href="#engagement">Engagement</a>
+  <a href="#contact">Contact</a>
+  <a href="#contact" class="btn btn-primary nav-cta">Get in touch</a>
+</div>
+
+<!-- ================= HERO ================= -->
 <section class="hero" id="home">
-  <div class="container hero-grid">
-    <div class="reveal">
-      <span class="eyebrow">E-commerce & Retail Operations</span>
-      <h1>Md. Shaharier<br><span>Hossain Jibon</span></h1>
-      <div class="role">E-commerce & Retail Operations Specialist</div>
-      <p class="hero-copy">Operations-focused professional with experience in e-commerce fulfillment, reverse logistics, inventory control, retail management, customer experience, KPI monitoring, and cross-functional coordination.</p>
-      <div class="actions">
-        <a class="btn primary" href="#projects">View My Work <i class="bi bi-arrow-right"></i></a>
-        <a class="btn secondary" href="#contact">Let's Connect <i class="bi bi-chat-dots"></i></a>
+  <svg class="hero-route" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <pattern id="dotgrid" width="26" height="26" patternUnits="userSpaceOnUse">
+        <circle cx="1.2" cy="1.2" r="1.2" fill="rgba(255,255,255,0.05)"/>
+      </pattern>
+    </defs>
+    <rect width="1200" height="700" fill="url(#dotgrid)"/>
+    <path d="M -20 560 C 220 470, 340 620, 560 500 S 900 300, 1240 380" fill="none" stroke="rgba(222,154,23,0.28)" stroke-width="1.5" stroke-dasharray="2 10" stroke-linecap="round"/>
+    <path d="M -40 160 C 200 260, 420 60, 660 150 S 1000 260, 1240 120" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="1" stroke-dasharray="1 8" stroke-linecap="round"/>
+  </svg>
+
+  <div class="container hero-inner">
+    <div>
+      <div class="hero-eyebrow-row">
+        <span class="hero-dot" aria-hidden="true"></span>
+        <span class="hero-role-chip">MIRPUR-10, DHAKA · AVAILABLE FOR OPPORTUNITIES</span>
       </div>
-      <div class="stats" aria-label="Career highlights">
-        <div class="stat"><strong data-count="4" data-suffix="+">0</strong><span>Years Experience</span></div>
-        <div class="stat"><strong data-count="3">0</strong><span>Professional Roles</span></div>
-        <div class="stat"><strong>BBA</strong><span>Management</span></div>
+      <h1>Md. Shaharier Hossain Jibon</h1>
+      <p class="hero-tagline">E-commerce &amp; retail operations professional, keeping orders, returns and inventory moving.</p>
+      <p class="hero-summary">I work at the point where customer promises meet warehouse reality — supervising returns, reconciling inventory, and coordinating couriers so that e-commerce operations stay accurate, fast and trustworthy. Currently with BRAC-Aarong, with prior operations roles at Shwapno and Khaas Food Ltd.</p>
+      <div class="hero-ctas">
+        <a href="#experience" class="btn btn-primary">View experience</a>
+        <a href="#skills" class="btn btn-outline">View skills</a>
+        <a href="#" id="downloadCvBtn" class="btn btn-ghost" download="Shaharier_Hossain_CV.pdf">Download CV</a>
       </div>
     </div>
-    <div class="profile-wrap reveal delay-2">
-      <!-- ORIGINAL IMAGE REFERENCE RETAINED -->
-      <div class="profile-card">
-        <img src="7030.jpg" alt="Professional portrait of Md. Shaharier Hossain Jibon" class="profile-image">
-        <div class="profile-meta">
-          <div><h2>Md. Shaharier Hossain Jibon</h2><p>Operations & E-commerce Professional</p></div>
-          <span class="status"><span class="dot"></span>Professional</span>
+
+    <div class="hero-photo-wrap">
+      <div class="tag-card">
+        <div class="tag-hole" aria-hidden="true"></div>
+        <div class="tag-photo">
+          <img src="shaharier-profile.jpg" alt="Portrait of Md. Shaharier Hossain Jibon" width="900" height="1350">
+        </div>
+        <div class="tag-caption">
+          <span>REF// SHJ-01</span>
+          <span>DHAKA, BD</span>
         </div>
       </div>
+      <div class="stat-float">
+        <div class="num">4+ yrs</div>
+        <div class="lbl">across e-commerce &amp; retail operations</div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- NEW: concise expertise rail for fast recruiter scanning -->
-<section class="expertise-strip" aria-label="Core expertise">
-  <div class="container expertise-grid">
-    <div class="expertise-item"><i class="bi bi-cart-check"></i><strong>E-commerce</strong></div>
-    <div class="expertise-item"><i class="bi bi-arrow-repeat"></i><strong>Reverse Logistics</strong></div>
-    <div class="expertise-item"><i class="bi bi-box-seam"></i><strong>Inventory Control</strong></div>
-    <div class="expertise-item"><i class="bi bi-graph-up-arrow"></i><strong>KPI & Analytics</strong></div>
-    <div class="expertise-item"><i class="bi bi-people"></i><strong>Team Coordination</strong></div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="section" id="about">
+<!-- ================= ABOUT ================= -->
+<section class="section-pad" id="about">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow">About Me</span>
-      <h2 class="section-title">Operations-focused.<br>Data-driven. Customer-minded.</h2>
-      <p class="section-copy">A practical operations professional focused on building efficient workflows, improving customer experiences, maintaining operational accuracy, and supporting measurable business performance.</p>
+      <span class="kicker">About</span>
+      <h2>Operations-first, customer-focused</h2>
     </div>
 
     <div class="about-grid">
-      <div class="reveal">
-        <p class="about-copy">I bring hands-on experience across e-commerce and omnichannel retail environments, with a strong understanding of order management, fulfillment, reverse logistics, inventory coordination, retail operations, and customer support.</p>
-        <p class="about-copy">My approach combines operational discipline with structured problem-solving. I focus on identifying process gaps, coordinating stakeholders, monitoring performance indicators, and improving workflows that contribute to better business outcomes.</p>
-        <div class="highlight"><strong>Professional Strength</strong><span>Turning operational challenges into structured, measurable, and customer-focused solutions.</span></div>
+      <div class="about-copy reveal">
+        <p>I build my work around one idea: an e-commerce order isn't finished until the customer is genuinely satisfied — even, and especially, when something has to be returned. Over the past several years I've focused on <strong>B2C e-commerce operations</strong>: returns and refunds, inventory accuracy, courier coordination, and the day-to-day discipline that keeps a distribution operation honest.</p>
+        <p>At <strong>BRAC-Aarong</strong>, I supervise a team responsible for return orders and backend inventory processing — reviewing eligibility, issuing RMAs, inspecting returned stock, and flagging fraudulent orders that would otherwise erode margins. Earlier, as <strong>Outlet E-commerce Manager at Shwapno (ACI Logistics Ltd.)</strong> and <strong>Outlet Manager at Khaas Food Ltd.</strong>, I managed full outlet operations — inventory, staffing, budgets, promotions and compliance — for physical retail alongside e-commerce fulfillment.</p>
+        <p>I hold a <strong>B.B.A. Honours in Management</strong> from Habibullah Bahar University College, and I bring a practical, data-informed approach to sales, customer management and problem solving — grounded in day-to-day retail and logistics realities rather than theory alone.</p>
       </div>
 
-      <div class="reveal delay-1">
-        <div class="skills-grid">
-          <article class="skill"><div class="skill-icon"><i class="bi bi-cart-check"></i></div><h3>E-commerce Operations</h3><p>Order processing, fulfillment, marketplace operations and workflow coordination.</p></article>
-          <article class="skill"><div class="skill-icon"><i class="bi bi-arrow-repeat"></i></div><h3>Reverse Logistics</h3><p>Returns, exchanges, inspection, refunds and courier coordination.</p></article>
-          <article class="skill"><div class="skill-icon"><i class="bi bi-box-seam"></i></div><h3>Inventory Control</h3><p>Stock monitoring, reconciliation and inventory accuracy.</p></article>
-          <article class="skill"><div class="skill-icon"><i class="bi bi-graph-up-arrow"></i></div><h3>KPI & Analytics</h3><p>Performance tracking, reporting and operational analysis.</p></article>
-          <article class="skill"><div class="skill-icon"><i class="bi bi-people"></i></div><h3>Team Coordination</h3><p>Workforce planning, communication and cross-functional coordination.</p></article>
-          <article class="skill"><div class="skill-icon"><i class="bi bi-headset"></i></div><h3>Customer Experience</h3><p>Issue resolution, support and service improvement.</p></article>
-        </div>
-        <h3 style="font-size:.78rem;color:var(--navy);margin:24px 0 0">Tools & Systems</h3>
-        <div class="tool-list">
-          <span class="tool">Microsoft Excel</span><span class="tool">Google Workspace</span><span class="tool">ERP Systems</span><span class="tool">WMS</span><span class="tool">Magento</span><span class="tool">Meta Business Suite</span><span class="tool">Bizbook</span>
-        </div>
+      <div class="fact-list reveal">
+        <div class="fact-row"><span class="fk">Current role</span><span class="fv">Assistant, E-commerce — BRAC-Aarong</span></div>
+        <div class="fact-row"><span class="fk">Focus areas</span><span class="fv">Returns · Inventory · Logistics</span></div>
+        <div class="fact-row"><span class="fk">Prior roles</span><span class="fv">Shwapno · Khaas Food Ltd.</span></div>
+        <div class="fact-row"><span class="fk">Education</span><span class="fv">B.B.A. Honours, Management</span></div>
+        <div class="fact-row"><span class="fk">Based in</span><span class="fv">Mirpur, Dhaka, Bangladesh</span></div>
       </div>
-    </div>
-
-    <!-- NEW: synthesized from the source's stated working approach; no new credentials added. -->
-    <div class="philosophy reveal">
-      <article class="ph-card"><div class="num">01 / STRUCTURE</div><h3>Map the workflow</h3><p>Identify process gaps across orders, returns, inventory and coordination.</p></article>
-      <article class="ph-card"><div class="num">02 / MONITOR</div><h3>Measure what matters</h3><p>Use operational monitoring and KPI thinking to keep execution visible.</p></article>
-      <article class="ph-card"><div class="num">03 / IMPROVE</div><h3>Turn insight into action</h3><p>Coordinate stakeholders and refine workflows toward better outcomes.</p></article>
     </div>
   </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section class="section soft" id="experience">
+<!-- ================= SKILLS ================= -->
+<section class="section-pad alt-bg" id="skills">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow">Career Journey</span>
-      <h2 class="section-title">Professional Experience</h2>
-      <p class="section-copy">Experience across e-commerce operations, reverse logistics, fulfillment, retail management, inventory coordination, and customer service.</p>
+      <span class="kicker">Skills &amp; expertise</span>
+      <h2>What I bring to an operations team</h2>
+      <p>A working combination of professional skills, hands-on systems knowledge, and hard-won industry expertise.</p>
     </div>
 
-    <!-- NEW: recruiter-friendly career snapshot -->
-    <div class="snapshot reveal">
-      <div class="snap"><i class="bi bi-calendar3"></i><strong>2019–Present</strong><span>Career timeline</span></div>
-      <div class="snap"><i class="bi bi-briefcase"></i><strong>3</strong><span>Professional roles</span></div>
-      <div class="snap"><i class="bi bi-arrow-repeat"></i><strong>Reverse</strong><span>Logistics focus</span></div>
-      <div class="snap"><i class="bi bi-people"></i><strong>Cross-functional</strong><span>Coordination</span></div>
+    <div class="skills-grid reveal-stagger">
+      <div class="skill-panel">
+        <h3>Professional skills</h3>
+        <p class="skill-desc">Core strengths applied daily across returns, sales and team coordination.</p>
+        <div class="chip-row">
+          <span class="chip">Sales &amp; Marketing</span>
+          <span class="chip">Customer Management</span>
+          <span class="chip">Teamwork</span>
+          <span class="chip">Time Management</span>
+          <span class="chip">Problem Solving</span>
+          <span class="chip">Data Analysis</span>
+        </div>
+      </div>
+
+      <div class="skill-panel">
+        <h3>Tools &amp; systems</h3>
+        <p class="skill-desc">Software used for inventory, fulfillment and day-to-day operations.</p>
+        <div class="chip-row">
+          <span class="chip">MS Office</span>
+          <span class="chip">Google Workspace</span>
+          <span class="chip">Adobe Magento</span>
+          <span class="chip">WMS</span>
+          <span class="chip">ERP</span>
+          <span class="chip">Meta Business Suite</span>
+          <span class="chip">Bizbook</span>
+        </div>
+      </div>
+
+      <div class="skill-panel">
+        <h3>Industry expertise</h3>
+        <p class="skill-desc">Domain knowledge built across three e-commerce and retail operations roles.</p>
+        <div class="chip-row">
+          <span class="chip">B2C E-commerce Operations</span>
+          <span class="chip">Returns &amp; Refunds</span>
+          <span class="chip">Inventory Management</span>
+          <span class="chip">Logistics &amp; Distribution</span>
+          <span class="chip">Customer Satisfaction</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="section-pad" id="experience">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">Experience</span>
+      <h2>Professional experience</h2>
+      <p>Four-plus years across returns management, outlet operations and e-commerce fulfillment.</p>
     </div>
 
     <div class="timeline">
-      <article class="timeline-item reveal">
-        <span class="timeline-dot"></span>
-        <div class="exp-card">
-          <span class="date">May 2022 — Present</span>
-          <h3>Assistant, E-commerce</h3><div class="company">BRAC-Aarong</div>
-          <ul>
-            <li>Manage high-volume reverse logistics operations across multiple channels.</li>
-            <li>Coordinate return requests, inspection, refund, and exchange workflows.</li>
-            <li>Work with logistics partners to improve return turnaround and operational efficiency.</li>
-            <li>Maintain inventory accuracy through reconciliation and systematic monitoring.</li>
-            <li>Coordinate Cash-on-Delivery refund cycles.</li>
-            <li>Analyze return patterns and identify process improvement opportunities.</li>
+      <div class="tl-item reveal">
+        <div class="tl-date">May 2022 —<br>Present</div>
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-card">
+          <h3>Assistant, E-commerce</h3>
+          <div class="tl-org"><span class="org-name">BRAC-Aarong</span><span class="org-loc">Dhaka, Bangladesh</span></div>
+          <ul class="tl-list">
+            <li>Supervise a team handling return orders and inventory backend processing of customer orders.</li>
+            <li>Manage customer return requests, assess eligibility, and generate RMAs for approved cases.</li>
+            <li>Coordinate pickups with couriers and track shipments through to completion.</li>
+            <li>Inspect returned items and process refunds, exchanges and Cash-on-Delivery (CoD) refunds, updating inventory records accordingly.</li>
+            <li>Analyze return data to identify trends and improve internal processes.</li>
+            <li>Identify fake orders and accounts to protect profit margins and reduce avoidable returns.</li>
+            <li>Check and ensure the quality of returned products across the team.</li>
+            <li>Coordinate with Sales and Marketing teams to receive photoshoot product returns and dispatch them correctly to the warehouse.</li>
+            <li>Developing an improved return-receiving process through sale channels.</li>
           </ul>
-          <div class="impact"><strong>Key Contribution:</strong> Improved operational consistency through structured return processing, stakeholder coordination, and better workflow monitoring.</div>
-        </div>
-      </article>
-
-      <article class="timeline-item reveal delay-1">
-        <span class="timeline-dot"></span>
-        <div class="exp-card">
-          <span class="date">February 2021 — December 2021</span>
-          <h3>Outlet E-commerce Manager</h3><div class="company">Shwapno — ACI Logistics Ltd.</div>
-          <ul>
-            <li>Managed inventory synchronization and e-commerce order fulfillment.</li>
-            <li>Coordinated dispatch and last-mile delivery operations.</li>
-            <li>Managed customer support and issue escalation.</li>
-            <li>Supported sales promotions and marketing campaigns.</li>
-            <li>Monitored order accuracy and fulfillment performance.</li>
-            <li>Coordinated with warehouse and operational teams.</li>
-          </ul>
-          <div class="impact"><strong>Key Contribution:</strong> Strengthened fulfillment coordination and customer service through structured operational monitoring.</div>
-        </div>
-      </article>
-
-      <article class="timeline-item reveal delay-2">
-        <span class="timeline-dot"></span>
-        <div class="exp-card">
-          <span class="date">April 2019 — December 2020</span>
-          <h3>Outlet Manager</h3><div class="company">Khaas Food Ltd.</div>
-          <ul>
-            <li>Directed daily retail outlet operations and sales activities.</li>
-            <li>Managed inventory planning and stock control.</li>
-            <li>Supervised employee schedules and productivity.</li>
-            <li>Monitored operational expenses and budgets.</li>
-            <li>Supported local promotional activities and marketing initiatives.</li>
-            <li>Monitored customer feedback and market trends.</li>
-          </ul>
-          <div class="impact"><strong>Key Contribution:</strong> Supported stronger outlet performance through structured sales, inventory, workforce, and customer-management practices.</div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- EDUCATION -->
-<section class="section" id="education">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Academic Background</span>
-      <h2 class="section-title">Education</h2>
-      <p class="section-copy">Academic foundations in business administration, management, and commercial operations.</p>
-    </div>
-    <div class="edu-grid">
-      <article class="edu reveal"><div class="edu-year">2023</div><h3>Bachelor of Business Administration</h3><div class="inst">Habibullah Bahar University</div><p>Major: Management<br>CGPA: 2.40 / 4.00</p></article>
-      <article class="edu reveal delay-1"><div class="edu-year">2019</div><h3>Higher Secondary Certificate</h3><div class="inst">Komlapur Sher E Bangla Railway Government College</div><p>Major: Business Administration<br>CGPA: 2.94 / 5.00</p></article>
-      <article class="edu reveal delay-2"><div class="edu-year">2016</div><h3>Secondary School Certificate</h3><div class="inst">Shahjahanpur Railway Govt. High School</div><p>Major: Business Administration<br>CGPA: 3.54 / 5.00</p></article>
-    </div>
-  </div>
-</section>
-
-<!-- CONTRIBUTIONS -->
-<section class="section soft" id="projects">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Selected Work</span>
-      <h2 class="section-title">Contributions</h2>
-      <p class="section-copy">Selected examples of operational work and practical contributions based on professional experience.</p>
-    </div>
-    <div class="project-grid">
-      <article class="project reveal"><div class="project-top"><i class="bi bi-arrow-repeat"></i></div><div class="project-body"><small>Contribution 01</small><h3>Reverse Logistics Optimization</h3><p>Structured return workflows covering requests, inspection, refunds, exchanges, inventory reconciliation, and courier coordination.</p><a href="#contact">Discuss Project <i class="bi bi-arrow-right"></i></a></div></article>
-      <article class="project reveal delay-1"><div class="project-top"><i class="bi bi-cart-check"></i></div><div class="project-body"><small>Contribution 02</small><h3>E-commerce Fulfillment</h3><p>Supported inventory synchronization, order processing, dispatch coordination, last-mile delivery, and customer experience.</p><a href="#contact">Discuss Project <i class="bi bi-arrow-right"></i></a></div></article>
-      <article class="project reveal delay-2"><div class="project-top"><i class="bi bi-shop"></i></div><div class="project-body"><small>Contribution 03</small><h3>Retail Operations Improvement</h3><p>Focused on outlet sales, inventory planning, staff coordination, expense management, promotions, and customer service.</p><a href="#contact">Discuss Project <i class="bi bi-arrow-right"></i></a></div></article>
-    </div>
-
-    <!-- NEW: visual "how the experience connects" flow -->
-    <div class="process reveal">
-      <div class="process-step"><b>01</b><h3>Order & Fulfillment</h3><p>Order processing, inventory synchronization and dispatch.</p></div>
-      <div class="process-step"><b>02</b><h3>Delivery & Service</h3><p>Last-mile coordination, support and escalation.</p></div>
-      <div class="process-step"><b>03</b><h3>Returns & Control</h3><p>Inspection, refunds, exchanges and reconciliation.</p></div>
-      <div class="process-step"><b>04</b><h3>Monitor & Improve</h3><p>KPI thinking, pattern analysis and workflow improvement.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- LANGUAGES -->
-<section class="section">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Communication</span>
-      <h2 class="section-title">Language Skills</h2>
-    </div>
-    <div class="lang-grid">
-      <div class="lang reveal"><div class="lang-head"><h3>Bengali</h3><span class="level">Native</span></div><div class="bar"><span style="--level:100%"></span></div></div>
-      <div class="lang reveal delay-1"><div class="lang-head"><h3>English</h3><span class="level">Professional</span></div><div class="bar"><span style="--level:82%"></span></div></div>
-      <div class="lang reveal delay-2"><div class="lang-head"><h3>Hindi</h3><span class="level">Basic</span></div><div class="bar"><span style="--level:48%"></span></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="section contact" id="contact">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Contact</span>
-      <h2 class="section-title">Let's Connect</h2>
-      <p class="section-copy">Interested in discussing a professional opportunity, collaboration, or project? Send a message and let's start a conversation.</p>
-    </div>
-    <div class="contact-grid">
-      <div class="reveal">
-        <div class="contact-list">
-          <!-- UPDATED CONTACT & SOCIAL DATA provided by the user. -->
-          <div class="contact-item"><small>Email</small><a href="mailto:shaharierhossainjibon@gmail.com">shaharierhossainjibon@gmail.com</a></div>
-          <div class="contact-item"><small>Phone / WhatsApp</small><a href="https://wa.me/8801624565751" target="_blank" rel="noopener">+880 1624565751</a></div>
-          <div class="contact-item"><small>LinkedIn</small><a href="https://linkedin.com/in/shaharierhossain" target="_blank" rel="noopener" aria-label="LinkedIn profile">linkedin.com/in/shaharierhossain</a></div>
-        </div>
-        <div class="socials">
-          <a href="https://linkedin.com/in/shaharierhossain" target="_blank" rel="noopener" class="social"><i class="bi bi-linkedin"></i> LinkedIn</a>
-          <a href="https://wa.me/8801624565751" target="_blank" rel="noopener" class="social"><i class="bi bi-whatsapp"></i> WhatsApp</a>
-          <a href="mailto:shaharierhossainjibon@gmail.com" class="social"><i class="bi bi-envelope"></i> Email</a>
-          <a href="https://facebook.com/shaharierh.jibon" target="_blank" rel="noopener" class="social"><i class="bi bi-facebook"></i> Facebook</a>
         </div>
       </div>
-      <form class="form reveal delay-1" id="contactForm">
-        <div class="form-grid">
-          <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required></div>
-          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required></div>
-          <div class="field full"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell me how I can help..." required></textarea></div>
-          <div class="field full"><button class="btn primary" type="submit" style="width:100%">Send Message <i class="bi bi-send"></i></button></div>
+
+      <div class="tl-item reveal">
+        <div class="tl-date">Feb 2021 —<br>Dec 2021</div>
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-card">
+          <h3>Outlet E-commerce Manager</h3>
+          <div class="tl-org"><span class="org-name">Shwapno (ACI Logistics Ltd.)</span><span class="org-loc">Dhaka, Bangladesh</span></div>
+          <ul class="tl-list">
+            <li>Managed online inventory, maintained stock levels, and coordinated with suppliers and warehouses.</li>
+            <li>Oversaw efficient order processing — accurate picking, packing and timely delivery.</li>
+            <li>Delivered customer support across multiple channels and implemented personalized shopping experiences.</li>
+            <li>Managed promotional campaigns and discounts to drive sales and increase customer loyalty.</li>
+            <li>Monitored key performance indicators, prepared regular reports, and managed budget to keep e-commerce activities cost-effective.</li>
+            <li>Implemented security measures to protect customer data and prevent fraud.</li>
+            <li>Oversaw warehouse operations and daily activities to ensure customer satisfaction, while maintaining a safe working environment and complying with relevant laws and regulations.</li>
+          </ul>
         </div>
-        <p class="form-note" id="formNote">This front-end form is ready for a mail/API endpoint; no external submission service is assumed.</p>
-      </form>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-date">Apr 2019 —<br>Dec 2020</div>
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-card">
+          <h3>Outlet Manager</h3>
+          <div class="tl-org"><span class="org-name">Khaas Food Ltd.</span><span class="org-loc">Dhaka, Bangladesh</span></div>
+          <ul class="tl-list">
+            <li>Managed day-to-day operations for a physical retail outlet alongside localized e-commerce fulfillment channels.</li>
+            <li>Directed omnichannel retail activity, aligning in-store stock with digital order processing and delivery.</li>
+            <li>Managed stock levels and ordering to meet customer demand, and monitored sales performance against targets.</li>
+            <li>Created staff work schedules to ensure adequate coverage at all times.</li>
+            <li>Resolved customer complaints and issues promptly, maintaining high service standards across staff.</li>
+            <li>Prepared and managed the outlet's budget; monitored expenses and analyzed financial reports to identify areas for improvement.</li>
+            <li>Planned and executed promotional campaigns, while analyzing market trends and competitor activity.</li>
+            <li>Maintained a safe working environment for staff and customers.</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-</main>
 
-<footer>
+<!-- ================= EDUCATION ================= -->
+<section class="section-pad alt-bg" id="education">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">Education</span>
+      <h2>Academic background</h2>
+    </div>
+
+    <div class="edu-grid reveal-stagger">
+      <div class="edu-card">
+        <span class="edu-year">2023</span>
+        <h3>B.B.A. Honours in Management</h3>
+        <span class="edu-inst">Habibullah Bahar University College</span>
+        <span class="edu-gpa">GPA 2.40 / 4.00</span>
+      </div>
+      <div class="edu-card">
+        <span class="edu-year">2019</span>
+        <h3>Higher Secondary School Certificate (HSC), Business Studies</h3>
+        <span class="edu-inst">Komlapur Sher-E-Bangla Railway Government College</span>
+        <span class="edu-gpa">GPA 2.94 / 5.00</span>
+      </div>
+      <div class="edu-card">
+        <span class="edu-year">2016</span>
+        <h3>Secondary School Certificate (SSC), Business Studies</h3>
+        <span class="edu-inst">Shahjahanpur Railway Govt. High School</span>
+        <span class="edu-gpa">GPA 3.54 / 5.00</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRAINING ================= -->
+<section class="section-pad" id="training">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">Training</span>
+      <h2>Professional training</h2>
+      <p>Short-form training completed alongside on-the-job experience.</p>
+    </div>
+
+    <div class="training-grid reveal-stagger">
+      <div class="training-card">
+        <span class="t-index">01</span>
+        <h4>Time Management</h4>
+      </div>
+      <div class="training-card">
+        <span class="t-index">02</span>
+        <h4>Fire Service &amp; Civil Defence</h4>
+      </div>
+      <div class="training-card">
+        <span class="t-index">03</span>
+        <h4>First Aid in Emergency</h4>
+      </div>
+      <div class="training-card">
+        <span class="t-index">04</span>
+        <h4>Ownership Thinking</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ENGAGEMENT / ACCOMPLISHMENTS ================= -->
+<section class="section-pad alt-bg" id="engagement">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">Engagement</span>
+      <h2>Participation &amp; engagement</h2>
+      <p>Operational responsibility taken on beyond regular day-to-day duties.</p>
+    </div>
+
+    <div class="engage-grid reveal-stagger">
+      <div class="engage-card">
+        <span class="e-tag">EVENT OPERATIONS</span>
+        <h3>Aarong Yearly Reduction Sale Fair</h3>
+        <p>Managed the Aarong e-commerce stall at the brand's Annual Aarong Yearly Reduction Sale Fair, handling on-ground customer engagement and sales operations for the event.</p>
+      </div>
+      <div class="engage-card">
+        <span class="e-tag">EVENT LOGISTICS</span>
+        <h3>50 Years of IBA Jubilee Concert</h3>
+        <p>Managed ground logistics, vendor setups, and backstage operations for the 50 Years of IBA Jubilee Concert.</p>
+      </div>
+    </div>
+
+    <div class="interests-strip reveal">
+      <span class="is-label">Outside of work:</span>
+      <span class="chip">Cricket</span>
+      <span class="chip">Cycling</span>
+      <span class="chip">Football</span>
+      <span class="chip">Computer Gaming</span>
+      <span class="chip">Mobile Gaming</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section-pad contact-section" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">Contact</span>
+      <h2>Let's talk about an opportunity</h2>
+      <p>Open to roles in e-commerce operations, returns management, inventory and logistics. Reach out through any of the channels below.</p>
+    </div>
+
+    <div class="contact-inner">
+      <div class="contact-list reveal">
+        <div class="contact-row">
+          <span class="ci" aria-hidden="true">✉</span>
+          <div>
+            <span class="clabel">Email</span>
+            <a href="mailto:shaharierhossainjibon@gmail.com">shaharierhossainjibon@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-row">
+          <span class="ci" aria-hidden="true">✉</span>
+          <div>
+            <span class="clabel">Alternate email</span>
+            <a href="mailto:shaharierhossainjibon@outlook.com">shaharierhossainjibon@outlook.com</a>
+          </div>
+        </div>
+        <div class="contact-row">
+          <span class="ci" aria-hidden="true">☎</span>
+          <div>
+            <span class="clabel">Phone</span>
+            <a href="tel:+8801624565751">+880 1624-565751</a>
+          </div>
+        </div>
+        <div class="contact-row">
+          <span class="ci" aria-hidden="true">in</span>
+          <div>
+            <span class="clabel">LinkedIn</span>
+            <a href="https://linkedin.com/in/shaharierhossain" target="_blank" rel="noopener">linkedin.com/in/shaharierhossain</a>
+          </div>
+        </div>
+        <div class="contact-row">
+          <span class="ci" aria-hidden="true">⌂</span>
+          <div>
+            <span class="clabel">Location</span>
+            <span class="cval">448/2-448/3, Senpara Parbata, Ward-14, Kafrul, Mirpur-10, Dhaka</span>
+          </div>
+        </div>
+
+        <div class="contact-note">
+          <h4>References</h4>
+          <p>Professional references from BRAC-Aarong and Habibullah Bahar University College are available on request.</p>
+        </div>
+      </div>
+
+      <div class="contact-actions reveal">
+        <div class="avail-card">
+          <h3>Currently employed, open to the right move</h3>
+          <p>I'm settled at BRAC-Aarong and doing meaningful work, but I'm always glad to hear about roles where operations, returns and customer experience genuinely matter. Feel free to send the details — I read everything myself.</p>
+          <a href="mailto:shaharierhossainjibon@gmail.com" class="btn btn-primary">Email me directly</a>
+        </div>
+        <div class="avail-card">
+          <h3>Prefer a document?</h3>
+          <p>Download a copy of my full CV, including references and detailed work history.</p>
+          <a href="#" id="downloadCvBtn2" class="btn btn-outline" download="Shaharier_Hossain_CV.pdf">Download CV (PDF)</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
   <div class="container footer-inner">
-    <div>© 2026 <strong>Md. Shaharier Hossain Jibon</strong>. All rights reserved.</div>
-    <div>Built as a clean, responsive professional portfolio.</div>
+    <span>© <span id="year"></span> Md. Shaharier Hossain Jibon. All rights reserved.</span>
+    <span>Built with care for e-commerce &amp; retail operations.</span>
   </div>
 </footer>
 
-<button class="backtop" id="backtop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
 <script src="script.js"></script>
 </body>
